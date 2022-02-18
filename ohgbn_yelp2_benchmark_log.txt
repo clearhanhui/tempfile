@@ -1,0 +1,638 @@
+RGCN
+18 Feb 15:41    INFO  [Config Info]     Model: RGCN,    Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:41    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:41    INFO  [NC Specific] Modify the out_dim with num_classes
+18 Feb 15:41    INFO  [Feature Transformation] Assign embedding as features, because hg.ndata is empty.
+  0%|                                                                                                                                                            | 0/50 [00:00<?, ?it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 0, Train loss: 0.6933, Valid loss: 0.6665. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  2%|██▉                                                                                                                                                 | 1/50 [00:00<00:38,  1.29it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 1, Train loss: 0.6661, Valid loss: 0.5910. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  4%|█████▉                                                                                                                                              | 2/50 [00:01<00:33,  1.44it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 2, Train loss: 0.5894, Valid loss: 0.4597. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  6%|████████▉                                                                                                                                           | 3/50 [00:02<00:32,  1.47it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 3, Train loss: 0.4616, Valid loss: 0.3683. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  8%|███████████▊                                                                                                                                        | 4/50 [00:02<00:31,  1.47it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 4, Train loss: 0.3680, Valid loss: 0.4493. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 10%|██████████████▊                                                                                                                                     | 5/50 [00:03<00:29,  1.53it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 5, Train loss: 0.4490, Valid loss: 0.4456. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 12%|█████████████████▊                                                                                                                                  | 6/50 [00:03<00:27,  1.58it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 6, Train loss: 0.4540, Valid loss: 0.3913. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 14%|████████████████████▋                                                                                                                               | 7/50 [00:04<00:26,  1.61it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 7, Train loss: 0.3982, Valid loss: 0.3636. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 16%|███████████████████████▋                                                                                                                            | 8/50 [00:05<00:26,  1.60it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 8, Train loss: 0.3644, Valid loss: 0.3754. [Evaluation metric]        Mode:train, Macro_f1: 0.0489; Micro_f1: 0.3757;         Mode:valid, Macro_f1: 0.0489; Micro_f1: 0.3748;         Mode:test, Macro_f1: 0.0477; Micro_f1: 0.3619;
+ 18%|██████████████████████████▋                                                                                                                         | 9/50 [00:05<00:25,  1.60it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 9, Train loss: 0.3752, Valid loss: 0.3927. [Evaluation metric]        Mode:train, Macro_f1: 0.0478; Micro_f1: 0.3564;         Mode:valid, Macro_f1: 0.0480; Micro_f1: 0.3560;         Mode:test, Macro_f1: 0.0463; Micro_f1: 0.3405;
+ 20%|█████████████████████████████▍                                                                                                                     | 10/50 [00:06<00:24,  1.61it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 10, Train loss: 0.3905, Valid loss: 0.3967. [Evaluation metric]       Mode:train, Macro_f1: 0.0495; Micro_f1: 0.3825;         Mode:valid, Macro_f1: 0.0497; Micro_f1: 0.3811;         Mode:test, Macro_f1: 0.0487; Micro_f1: 0.3718;
+ 22%|████████████████████████████████▎                                                                                                                  | 11/50 [00:07<00:23,  1.63it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 11, Train loss: 0.3932, Valid loss: 0.3881. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 24%|███████████████████████████████████▎                                                                                                               | 12/50 [00:07<00:23,  1.64it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 12, Train loss: 0.3939, Valid loss: 0.3730. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 26%|██████████████████████████████████████▏                                                                                                            | 13/50 [00:08<00:22,  1.65it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 13, Train loss: 0.3736, Valid loss: 0.3610. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 28%|█████████████████████████████████████████▏                                                                                                         | 14/50 [00:08<00:22,  1.62it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 14, Train loss: 0.3592, Valid loss: 0.3594. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 30%|████████████████████████████████████████████                                                                                                       | 15/50 [00:09<00:22,  1.57it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 15, Train loss: 0.3610, Valid loss: 0.3648. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 32%|███████████████████████████████████████████████                                                                                                    | 16/50 [00:10<00:21,  1.59it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 16, Train loss: 0.3685, Valid loss: 0.3662. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 34%|█████████████████████████████████████████████████▉                                                                                                 | 17/50 [00:10<00:20,  1.62it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 17, Train loss: 0.3660, Valid loss: 0.3621. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 36%|████████████████████████████████████████████████████▉                                                                                              | 18/50 [00:11<00:19,  1.62it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 18, Train loss: 0.3629, Valid loss: 0.3568. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 38%|███████████████████████████████████████████████████████▊                                                                                           | 19/50 [00:12<00:19,  1.60it/s]18 Feb 15:41    INFO  [Train Info] Epoch: 19, Train loss: 0.3566, Valid loss: 0.3557. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 40%|██████████████████████████████████████████████████████████▊                                                                                        | 20/50 [00:12<00:18,  1.59it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 20, Train loss: 0.3552, Valid loss: 0.3578. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 42%|█████████████████████████████████████████████████████████████▋                                                                                     | 21/50 [00:13<00:18,  1.60it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 21, Train loss: 0.3567, Valid loss: 0.3585. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 44%|████████████████████████████████████████████████████████████████▋                                                                                  | 22/50 [00:13<00:17,  1.62it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 22, Train loss: 0.3602, Valid loss: 0.3565. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 46%|███████████████████████████████████████████████████████████████████▌                                                                               | 23/50 [00:14<00:16,  1.62it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 23, Train loss: 0.3557, Valid loss: 0.3546. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 48%|██████████████████████████████████████████████████████████████████████▌                                                                            | 24/50 [00:15<00:16,  1.60it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 24, Train loss: 0.3532, Valid loss: 0.3544. [Evaluation metric]       Mode:train, Macro_f1: 0.0511; Micro_f1: 0.4122;         Mode:valid, Macro_f1: 0.0522; Micro_f1: 0.4205;         Mode:test, Macro_f1: 0.0506; Micro_f1: 0.4046;
+ 50%|█████████████████████████████████████████████████████████████████████████▌                                                                         | 25/50 [00:15<00:15,  1.59it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 25, Train loss: 0.3513, Valid loss: 0.3552. [Evaluation metric]       Mode:train, Macro_f1: 0.0518; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4209;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4039;
+ 52%|████████████████████████████████████████████████████████████████████████████▍                                                                      | 26/50 [00:16<00:14,  1.61it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 26, Train loss: 0.3535, Valid loss: 0.3546. [Evaluation metric]       Mode:train, Macro_f1: 0.0518; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4209;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4039;
+ 54%|███████████████████████████████████████████████████████████████████████████████▍                                                                   | 27/50 [00:16<00:14,  1.62it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 27, Train loss: 0.3519, Valid loss: 0.3526. [Evaluation metric]       Mode:train, Macro_f1: 0.0518; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4209;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4039;
+ 56%|██████████████████████████████████████████████████████████████████████████████████▎                                                                | 28/50 [00:17<00:13,  1.59it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 28, Train loss: 0.3507, Valid loss: 0.3510. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4137;         Mode:valid, Macro_f1: 0.0525; Micro_f1: 0.4186;         Mode:test, Macro_f1: 0.0510; Micro_f1: 0.4021;
+ 58%|█████████████████████████████████████████████████████████████████████████████████████▎                                                             | 29/50 [00:18<00:13,  1.56it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 29, Train loss: 0.3484, Valid loss: 0.3499. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4188;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4022;
+ 60%|████████████████████████████████████████████████████████████████████████████████████████▏                                                          | 30/50 [00:18<00:12,  1.54it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 30, Train loss: 0.3476, Valid loss: 0.3492. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4188;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4022;
+ 62%|███████████████████████████████████████████████████████████████████████████████████████████▏                                                       | 31/50 [00:19<00:12,  1.54it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 31, Train loss: 0.3470, Valid loss: 0.3489. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4188;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4022;
+ 64%|██████████████████████████████████████████████████████████████████████████████████████████████                                                     | 32/50 [00:20<00:11,  1.54it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 32, Train loss: 0.3471, Valid loss: 0.3488. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4183;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4022;
+ 66%|█████████████████████████████████████████████████████████████████████████████████████████████████                                                  | 33/50 [00:20<00:10,  1.55it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 33, Train loss: 0.3471, Valid loss: 0.3486. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4188;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4022;
+ 68%|███████████████████████████████████████████████████████████████████████████████████████████████████▉                                               | 34/50 [00:21<00:10,  1.56it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 34, Train loss: 0.3471, Valid loss: 0.3486. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0526; Micro_f1: 0.4188;         Mode:test, Macro_f1: 0.0511; Micro_f1: 0.4022;
+ 70%|██████████████████████████████████████████████████████████████████████████████████████████████████████▉                                            | 35/50 [00:22<00:09,  1.59it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 35, Train loss: 0.3461, Valid loss: 0.3492. [Evaluation metric]       Mode:train, Macro_f1: 0.0563; Micro_f1: 0.4144;         Mode:valid, Macro_f1: 0.0563; Micro_f1: 0.4186;         Mode:test, Macro_f1: 0.0573; Micro_f1: 0.4040;
+ 72%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                         | 36/50 [00:22<00:08,  1.60it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 36, Train loss: 0.3473, Valid loss: 0.3492. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4134;         Mode:valid, Macro_f1: 0.0527; Micro_f1: 0.4192;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 74%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                      | 37/50 [00:23<00:08,  1.61it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 37, Train loss: 0.3474, Valid loss: 0.3488. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4134;         Mode:valid, Macro_f1: 0.0527; Micro_f1: 0.4192;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 76%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                   | 38/50 [00:23<00:07,  1.63it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 38, Train loss: 0.3465, Valid loss: 0.3483. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4134;         Mode:valid, Macro_f1: 0.0527; Micro_f1: 0.4192;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 78%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                | 39/50 [00:24<00:06,  1.60it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 39, Train loss: 0.3460, Valid loss: 0.3479. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4134;         Mode:valid, Macro_f1: 0.0527; Micro_f1: 0.4192;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                             | 40/50 [00:25<00:06,  1.57it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 40, Train loss: 0.3451, Valid loss: 0.3478. [Evaluation metric]       Mode:train, Macro_f1: 0.0520; Micro_f1: 0.4134;         Mode:valid, Macro_f1: 0.0527; Micro_f1: 0.4192;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 82%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                          | 41/50 [00:25<00:05,  1.56it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 41, Train loss: 0.3457, Valid loss: 0.3480. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                       | 42/50 [00:26<00:05,  1.58it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 42, Train loss: 0.3451, Valid loss: 0.3481. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                    | 43/50 [00:27<00:04,  1.60it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 43, Train loss: 0.3447, Valid loss: 0.3480. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                 | 44/50 [00:27<00:03,  1.62it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 44, Train loss: 0.3444, Valid loss: 0.3479. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎              | 45/50 [00:28<00:03,  1.63it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 45, Train loss: 0.3446, Valid loss: 0.3477. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 92%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏           | 46/50 [00:28<00:02,  1.59it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 46, Train loss: 0.3441, Valid loss: 0.3476. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏        | 47/50 [00:29<00:01,  1.59it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 47, Train loss: 0.3440, Valid loss: 0.3476. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████      | 48/50 [00:30<00:01,  1.56it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 48, Train loss: 0.3442, Valid loss: 0.3476. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+ 98%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████   | 49/50 [00:30<00:00,  1.59it/s]18 Feb 15:42    INFO  [Train Info] Epoch: 49, Train loss: 0.3441, Valid loss: 0.3475. [Evaluation metric]       Mode:train, Macro_f1: 0.0521; Micro_f1: 0.4135;         Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [00:31<00:00,  1.58it/s]
+18 Feb 15:42    INFO  [Train Info] [Test Info][Evaluation metric]       Mode:valid, Macro_f1: 0.0528; Micro_f1: 0.4194;         Mode:test, Macro_f1: 0.0512; Micro_f1: 0.4021;
+
+HERec
+18 Feb 15:42    INFO  [Config Info]     Model: HERec,   Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:42    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 18, in OpenHGNN
+    flow = build_flow(args, trainerflow)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/__init__.py", line 46, in build_flow
+    return FLOW_REGISTRY[flow_name](args)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/herec_trainer.py", line 22, in __init__
+    self.metapath = self.task.dataset.meta_paths_dict[self.args.meta_path_keys[0]]
+TypeError: 'NoneType' object is not subscriptable
+
+HAN
+18 Feb 15:42    INFO  [Config Info]     Model: HAN,     Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:42    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:42    INFO  [NC Specific] Modify the out_dim with num_classes
+18 Feb 15:42    INFO  [Feature Transformation] Assign embedding as features, because hg.ndata is empty.
+  0%|                                                                                                                                                           | 0/200 [00:19<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 19, in OpenHGNN
+    result = flow.train()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 112, in train
+    train_loss = self._full_train_step()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 152, in _full_train_step
+    logits = self.model(self.hg, h_dict)[self.category]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/HAN.py", line 94, in forward
+    h_dict = gnn(g, h_dict)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/HAN.py", line 159, in forward
+    h = self.model(self._cached_coalesced_graph, h)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/layers/MetapathConv.py", line 56, in forward
+    outputs[new_g.dsttypes[0]].append(self.mods[mp](new_g, h).flatten(1))
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/nn/pytorch/conv/gatconv.py", line 310, in forward
+    graph.edata['a'] = self.attn_drop(edge_softmax(graph, e))
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/ops/edge_softmax.py", line 135, in edge_softmax
+    eids=eids, norm_by=norm_by)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/backend/pytorch/sparse.py", line 807, in edge_softmax
+    return EdgeSoftmax.apply(gidx, logits, eids, norm_by)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/cuda/amp/autocast_mode.py", line 216, in decorate_fwd
+    return fwd(*args, **kwargs)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/backend/pytorch/sparse.py", line 479, in forward
+    score = th.exp(_gsddmm(gidx, 'sub', score, score_max, 'e', 'v'))
+RuntimeError: CUDA out of memory. Tried to allocate 1.67 GiB (GPU 1; 10.92 GiB total capacity; 8.07 GiB already allocated; 1.20 GiB free; 8.10 GiB reserved in total by PyTorch)
+
+HetGNN
+18 Feb 15:42    INFO  [Config Info]     Model: HetGNN,  Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:43    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 19, in OpenHGNN
+    result = flow.train()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/hetgnn_trainer.py", line 55, in train
+    self.preprocess()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/hetgnn_trainer.py", line 39, in preprocess
+    self.het_graph = hetg.get_hetgnn_graph(self.args.rw_length, self.args.rw_walks, self.args.rwr_prob).to('cpu')
+  File "/home/hanhui/OpenHGNN-main/openhgnn/sampler/HetGNN_sampler.py", line 210, in get_hetgnn_graph
+    g = self.build_hetgnn_graph(length, walks, restart_prob)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/sampler/HetGNN_sampler.py", line 228, in build_hetgnn_graph
+    edges[int(utype)][int(vtype)][0].append(self.NID[uid])
+IndexError: list index out of range
+
+GTN
+18 Feb 15:43    INFO  [Config Info]     Model: GTN,     Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:43    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:43    INFO  [NC Specific] Modify the out_dim with num_classes
+18 Feb 15:43    INFO  [Feature Transformation] Assign embedding as features, because hg.ndata is empty.
+  0%|                                                                                                                                                            | 0/50 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 19, in OpenHGNN
+    result = flow.train()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 112, in train
+    train_loss = self._full_train_step()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 152, in _full_train_step
+    logits = self.model(self.hg, h_dict)[self.category]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/GTN_sparse.py", line 112, in forward
+    H, W = self.layers[i](A)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/GTN_sparse.py", line 181, in forward
+    g = dgl.adj_product_graph(result_A[i], result_B[i], 'w_sum')
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/transform/functional.py", line 2660, in adj_product_graph
+    A._graph, A.edata[weight_name], B._graph, B.edata[weight_name], num_vtypes)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/backend/pytorch/sparse.py", line 820, in csrmm
+    CSRMM.apply(gidxA, A_weights, gidxB, B_weights, num_vtypes)
+RuntimeError: Trying to create tensor with negative dimension -746823048: [-746823048]
+
+RSHN
+18 Feb 15:43    INFO  [Config Info]     Model: RSHN,    Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:43    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:43    INFO  [NC Specific] Modify the out_dim with num_classes
+18 Feb 15:43    INFO  [Feature Transformation] Assign embedding as features, because hg.ndata is empty.
+  0%|                                                                                                                                                           | 0/500 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 19, in OpenHGNN
+    result = flow.train()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 112, in train
+    train_loss = self._full_train_step()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 152, in _full_train_step
+    logits = self.model(self.hg, h_dict)[self.category]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/RSHN.py", line 85, in forward
+    edge_weight[e] = h[i].expand(hg.num_edges(e), -1)
+IndexError: index 7 is out of bounds for dimension 0 with size 7
+
+DMGI
+18 Feb 15:43    INFO  [Config Info]     Model: DMGI,    Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:43    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 18, in OpenHGNN
+    flow = build_flow(args, trainerflow)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/__init__.py", line 46, in build_flow
+    return FLOW_REGISTRY[flow_name](args)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/DMGI_trainer.py", line 26, in __init__
+    self.args.in_dim = self.args.hidden_dim
+AttributeError: 'Config' object has no attribute 'hidden_dim'
+
+MAGNN
+18 Feb 15:43    INFO  [Config Info]     Model: MAGNN,   Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:43    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:43    INFO  [NC Specific] Modify the out_dim with num_classes
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 18, in OpenHGNN
+    flow = build_flow(args, trainerflow)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/__init__.py", line 46, in build_flow
+    return FLOW_REGISTRY[flow_name](args)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 42, in __init__
+    self.model = build_model(self.model_name).build_model_from_args(self.args, self.hg).to(self.device)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/MAGNN.py", line 38, in build_model_from_args
+    mp_instances = mp_instance_sampler(hg, metapath_list)
+UnboundLocalError: local variable 'metapath_list' referenced before assignment
+
+CompGCN
+18 Feb 16:07    INFO  [Config Info]     Model: CompGCN, Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 16:07    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 16:07    INFO  [NC Specific] Modify the out_dim with num_classes
+18 Feb 16:07    INFO  [Feature Transformation] Assign embedding as features, because hg.ndata is empty.
+  0%|                                                                                                                                                           | 0/500 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 19, in OpenHGNN
+    result = flow.train()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 112, in train
+    train_loss = self._full_train_step()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 152, in _full_train_step
+    logits = self.model(self.hg, h_dict)[self.category]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/CompGCN.py", line 92, in forward
+    n_feats, r_feats = layer(hg, n_feats, r_feats)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/CompGCN.py", line 166, in forward
+    outputs = self.conv(hg, inputs_src, mod_kwargs=wdict)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/nn/pytorch/hetero.py", line 189, in forward
+    **mod_kwargs.get(etype, {}))
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/layers/micro_layer/CompConv.py", line 128, in forward
+    graph.apply_edges(self.aggregate)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/heterograph.py", line 4439, in apply_edges
+    edata = core.invoke_gsddmm(g, func)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/core.py", line 266, in invoke_gsddmm
+    z = op(graph, x, y)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/ops/sddmm.py", line 128, in func
+    lhs_target=lhs_target, rhs_target=rhs_target)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/ops/sddmm.py", line 75, in gsddmm
+    g._graph, op, lhs_data, rhs_data, lhs_target, rhs_target)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/backend/pytorch/sparse.py", line 776, in gsddmm
+    return GSDDMM.apply(gidx, op, lhs_data, rhs_data, lhs_target, rhs_target)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/cuda/amp/autocast_mode.py", line 216, in decorate_fwd
+    return fwd(*args, **kwargs)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/backend/pytorch/sparse.py", line 310, in forward
+    out = _gsddmm(gidx, op, X, Y, lhs_target, rhs_target)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/sparse.py", line 564, in _gsddmm
+    out = F.zeros(out_shp, dtype, ctx)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/backend/pytorch/tensor.py", line 223, in zeros
+    return th.zeros(shape, dtype=dtype, device=ctx)
+RuntimeError: CUDA out of memory. Tried to allocate 3.24 GiB (GPU 1; 10.92 GiB total capacity; 8.29 GiB already allocated; 1.41 GiB free; 8.31 GiB reserved in total by PyTorch)
+
+NSHE
+18 Feb 15:44    INFO  [Config Info]     Model: NSHE,    Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:44    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+Done saving data into cached files.
+18 Feb 15:44    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 18, in OpenHGNN
+    flow = build_flow(args, trainerflow)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/__init__.py", line 46, in build_flow
+    return FLOW_REGISTRY[flow_name](args)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/nshe_trainer.py", line 31, in __init__
+    self.model = build_model(self.model_name).build_model_from_args(self.args, self.hg)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/NSHE.py", line 37, in build_model_from_args
+    emd_dim=args.dim_size['emd'], context_dim=args.dim_size['context'])
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/NSHE.py", line 53, in __init__
+    in_dim = g.nodes[ntype].data['h'].shape[1]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/view.py", line 67, in __getitem__
+    return self._graph._get_n_repr(self._ntid, self._nodes)[key]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/frame.py", line 445, in __getitem__
+    return self._columns[name].data
+KeyError: 'h'
+
+NARS
+18 Feb 15:44    INFO  [Config Info]     Model: NARS,    Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:44    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:44    INFO  [NC Specific] Modify the out_dim with num_classes
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 18, in OpenHGNN
+    flow = build_flow(args, trainerflow)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/__init__.py", line 46, in build_flow
+    return FLOW_REGISTRY[flow_name](args)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 42, in __init__
+    self.model = build_model(self.model_name).build_model_from_args(self.args, self.hg).to(self.device)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/NARS.py", line 71, in build_model_from_args
+    hg = hg,
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/NARS.py", line 84, in __init__
+    in_size = hg.nodes[args.category].data["h"].shape[1]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/view.py", line 67, in __getitem__
+    return self._graph._get_n_repr(self._ntid, self._nodes)[key]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/frame.py", line 445, in __getitem__
+    return self._columns[name].data
+KeyError: 'h'
+
+MHNF
+18 Feb 15:44    INFO  [Config Info]     Model: MHNF,    Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:44    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:44    INFO  [NC Specific] Modify the out_dim with num_classes
+18 Feb 15:44    INFO  [Feature Transformation] Assign embedding as features, because hg.ndata is empty.
+  0%|                                                                                                                                                            | 0/50 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 19, in OpenHGNN
+    result = flow.train()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 112, in train
+    train_loss = self._full_train_step()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 152, in _full_train_step
+    logits = self.model(self.hg, h_dict)[self.category]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/MHNF.py", line 90, in forward
+    final_representation = self.HSAF(A, h)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/MHNF.py", line 165, in forward
+    attention_list = self.HLHIA_layer(A, h)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/MHNF.py", line 228, in forward
+    H, W, first_adj = self.layers[i](A)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/MHNF.py", line 293, in forward
+    g = dgl.adj_product_graph(result_A[i], result_B[i], 'w_sum')
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/transform/functional.py", line 2660, in adj_product_graph
+    A._graph, A.edata[weight_name], B._graph, B.edata[weight_name], num_vtypes)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/backend/pytorch/sparse.py", line 820, in csrmm
+    CSRMM.apply(gidxA, A_weights, gidxB, B_weights, num_vtypes)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/backend/pytorch/sparse.py", line 640, in forward
+    gidxC, C_weights = _csrmm(gidxA, A_weights, gidxB, B_weights, num_vtypes)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/sparse.py", line 817, in _csrmm
+    A, F.to_dgl_nd(A_weights), B, F.to_dgl_nd(B_weights), num_vtypes)
+  File "dgl/_ffi/_cython/./function.pxi", line 287, in dgl._ffi._cy3.core.FunctionBase.__call__
+  File "dgl/_ffi/_cython/./function.pxi", line 232, in dgl._ffi._cy3.core.FuncCall
+  File "dgl/_ffi/_cython/./base.pxi", line 155, in dgl._ffi._cy3.core.CALL
+dgl._ffi.base.DGLError: [15:44:34] /opt/dgl/src/array/cuda/csr_mm.cu:183: Check failed: e == CUSPARSE_STATUS_SUCCESS: CUSPARSE ERROR: 6
+Stack trace:
+  [bt] (0) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/libdgl.so(dmlc::LogMessageFatal::~LogMessageFatal()+0x4f) [0x7f3c42c15adf]
+  [bt] (1) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/libdgl.so(std::pair<dgl::aten::CSRMatrix, dgl::runtime::NDArray> dgl::aten::cusparse::CusparseSpgemm<float, int>(dgl::aten::CSRMatrix const&, dgl::runtime::NDArray, dgl::aten::CSRMatrix const&, dgl::runtime::NDArray)+0xe34) [0x7f3c43122b04]
+  [bt] (2) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/libdgl.so(std::pair<dgl::aten::CSRMatrix, dgl::runtime::NDArray> dgl::aten::CSRMM<2, long, float>(dgl::aten::CSRMatrix const&, dgl::runtime::NDArray, dgl::aten::CSRMatrix const&, dgl::runtime::NDArray)+0x590) [0x7f3c43126490]
+  [bt] (3) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/libdgl.so(dgl::aten::CSRMM(dgl::aten::CSRMatrix, dgl::runtime::NDArray, dgl::aten::CSRMatrix, dgl::runtime::NDArray)+0x132e) [0x7f3c42ed9b0e]
+  [bt] (4) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/libdgl.so(+0x5b9d12) [0x7f3c42ee4d12]
+  [bt] (5) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/libdgl.so(+0x5ba484) [0x7f3c42ee5484]
+  [bt] (6) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/libdgl.so(DGLFuncCall+0x48) [0x7f3c42f367b8]
+  [bt] (7) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/_ffi/_cy3/core.cpython-37m-x86_64-linux-gnu.so(+0x163ea) [0x7f3c317743ea]
+  [bt] (8) /home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/_ffi/_cy3/core.cpython-37m-x86_64-linux-gnu.so(+0x1695b) [0x7f3c3177495b]
+
+HGSL
+18 Feb 15:44    INFO  [Config Info]     Model: HGSL,    Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:44    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:44    INFO  [NC Specific] Modify the out_dim with num_classes
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 18, in OpenHGNN
+    flow = build_flow(args, trainerflow)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/__init__.py", line 46, in build_flow
+    return FLOW_REGISTRY[flow_name](args)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 42, in __init__
+    self.model = build_model(self.model_name).build_model_from_args(self.args, self.hg).to(self.device)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/HGSL.py", line 92, in build_model_from_args
+    feat_dims[ntype] = hg.nodes[ntype].data['h'].shape[1]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/view.py", line 67, in __getitem__
+    return self._graph._get_n_repr(self._ntid, self._nodes)[key]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/frame.py", line 445, in __getitem__
+    return self._columns[name].data
+KeyError: 'h'
+
+HGNN-AC
+18 Feb 16:09    INFO  [Config Info]     Model: HGNN_AC, Task: node_classification,      Dataset: ohgbn-yelp2
+Failed to import node_classification_ac flows.
+
+HeCo
+18 Feb 15:45    INFO  [Config Info]     Model: HeCo,    Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:45    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+Done saving data into cached files.
+18 Feb 15:45    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 18, in OpenHGNN
+    flow = build_flow(args, trainerflow)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/__init__.py", line 46, in build_flow
+    return FLOW_REGISTRY[flow_name](args)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/HeCo_trainer.py", line 33, in __init__
+    self.pos = self.task.dataset.pos.to(self.device)
+AttributeError: 'OHGB_NodeClassification' object has no attribute 'pos'
+
+SimpleHGN
+18 Feb 15:45    INFO  [Config Info]     Model: SimpleHGN,       Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:45    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:45    INFO  [NC Specific] Modify the out_dim with num_classes
+18 Feb 15:45    INFO  [Feature Transformation] Assign embedding as features, because hg.ndata is empty.
+  0%|                                                                                                                                                           | 0/500 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 19, in OpenHGNN
+    result = flow.train()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 112, in train
+    train_loss = self._full_train_step()
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 152, in _full_train_step
+    logits = self.model(self.hg, h_dict)[self.category]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/SimpleHGN.py", line 96, in forward
+    h = self.gat_layers[l](graph, h)
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/SimpleHGN.py", line 173, in forward
+    edge_attention = self.leakyrelu(h_l + h_r + h_e)
+RuntimeError: CUDA out of memory. Tried to allocate 1.82 GiB (GPU 1; 10.92 GiB total capacity; 8.91 GiB already allocated; 1.19 GiB free; 8.94 GiB reserved in total by PyTorch)
+
+HPN
+18 Feb 15:45    INFO  [Config Info]     Model: HPN,     Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:45    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:45    INFO  [NC Specific] Modify the out_dim with num_classes
+18 Feb 15:45    INFO  [Feature Transformation] Assign embedding as features, because hg.ndata is empty.
+  0%|                                                                                                                                                           | 0/200 [00:00<?, ?it/s]18 Feb 15:45    INFO  [Train Info] Epoch: 0, Train loss: 0.6851, Valid loss: 0.6774. [Evaluation metric]        Mode:train, Macro_f1: 0.1227; Micro_f1: 0.3218;         Mode:valid, Macro_f1: 0.1230; Micro_f1: 0.3254;         Mode:test, Macro_f1: 0.1242; Micro_f1: 0.3241;
+  0%|▋                                                                                                                                                | 1/200 [00:20<1:07:15, 20.28s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 1, Train loss: 0.6773, Valid loss: 0.6696. [Evaluation metric]        Mode:train, Macro_f1: 0.1227; Micro_f1: 0.3218;         Mode:valid, Macro_f1: 0.1230; Micro_f1: 0.3254;         Mode:test, Macro_f1: 0.1242; Micro_f1: 0.3241;
+  1%|█▍                                                                                                                                                 | 2/200 [00:21<29:08,  8.83s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 2, Train loss: 0.6695, Valid loss: 0.6618. [Evaluation metric]        Mode:train, Macro_f1: 0.1227; Micro_f1: 0.3218;         Mode:valid, Macro_f1: 0.1230; Micro_f1: 0.3254;         Mode:test, Macro_f1: 0.1242; Micro_f1: 0.3241;
+  2%|██▏                                                                                                                                                | 3/200 [00:21<16:58,  5.17s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 3, Train loss: 0.6617, Valid loss: 0.6539. [Evaluation metric]        Mode:train, Macro_f1: 0.1115; Micro_f1: 0.3426;         Mode:valid, Macro_f1: 0.1138; Micro_f1: 0.3513;         Mode:test, Macro_f1: 0.1146; Micro_f1: 0.3493;
+  2%|██▉                                                                                                                                                | 4/200 [00:22<11:14,  3.44s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 4, Train loss: 0.6538, Valid loss: 0.6459. [Evaluation metric]        Mode:train, Macro_f1: 0.0807; Micro_f1: 0.3599;         Mode:valid, Macro_f1: 0.0827; Micro_f1: 0.3699;         Mode:test, Macro_f1: 0.0818; Micro_f1: 0.3615;
+  2%|███▋                                                                                                                                               | 5/200 [00:23<08:03,  2.48s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 5, Train loss: 0.6458, Valid loss: 0.6376. [Evaluation metric]        Mode:train, Macro_f1: 0.0807; Micro_f1: 0.3599;         Mode:valid, Macro_f1: 0.0827; Micro_f1: 0.3699;         Mode:test, Macro_f1: 0.0818; Micro_f1: 0.3615;
+  3%|████▍                                                                                                                                              | 6/200 [00:24<06:08,  1.90s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 6, Train loss: 0.6375, Valid loss: 0.6290. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  4%|█████▏                                                                                                                                             | 7/200 [00:25<04:56,  1.54s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 7, Train loss: 0.6289, Valid loss: 0.6200. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  4%|█████▉                                                                                                                                             | 8/200 [00:25<04:12,  1.32s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 8, Train loss: 0.6199, Valid loss: 0.6106. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  4%|██████▌                                                                                                                                            | 9/200 [00:26<03:40,  1.15s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 9, Train loss: 0.6106, Valid loss: 0.6008. [Evaluation metric]        Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  5%|███████▎                                                                                                                                          | 10/200 [00:27<03:18,  1.05s/it]18 Feb 15:45    INFO  [Train Info] Epoch: 10, Train loss: 0.6008, Valid loss: 0.5907. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  6%|████████                                                                                                                                          | 11/200 [00:28<03:02,  1.03it/s]18 Feb 15:45    INFO  [Train Info] Epoch: 11, Train loss: 0.5906, Valid loss: 0.5801. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  6%|████████▊                                                                                                                                         | 12/200 [00:29<02:58,  1.05it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 12, Train loss: 0.5801, Valid loss: 0.5692. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  6%|█████████▍                                                                                                                                        | 13/200 [00:30<02:52,  1.08it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 13, Train loss: 0.5692, Valid loss: 0.5579. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  7%|██████████▏                                                                                                                                       | 14/200 [00:30<02:42,  1.15it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 14, Train loss: 0.5579, Valid loss: 0.5464. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  8%|██████████▉                                                                                                                                       | 15/200 [00:31<02:41,  1.15it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 15, Train loss: 0.5464, Valid loss: 0.5346. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  8%|███████████▋                                                                                                                                      | 16/200 [00:32<02:43,  1.12it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 16, Train loss: 0.5346, Valid loss: 0.5226. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  8%|████████████▍                                                                                                                                     | 17/200 [00:33<02:37,  1.16it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 17, Train loss: 0.5226, Valid loss: 0.5104. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+  9%|█████████████▏                                                                                                                                    | 18/200 [00:34<02:37,  1.16it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 18, Train loss: 0.5105, Valid loss: 0.4982. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 10%|█████████████▊                                                                                                                                    | 19/200 [00:35<02:34,  1.17it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 19, Train loss: 0.4983, Valid loss: 0.4861. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 10%|██████████████▌                                                                                                                                   | 20/200 [00:35<02:35,  1.16it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 20, Train loss: 0.4862, Valid loss: 0.4741. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 10%|███████████████▎                                                                                                                                  | 21/200 [00:36<02:32,  1.18it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 21, Train loss: 0.4741, Valid loss: 0.4622. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 11%|████████████████                                                                                                                                  | 22/200 [00:37<02:28,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 22, Train loss: 0.4623, Valid loss: 0.4507. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 12%|████████████████▊                                                                                                                                 | 23/200 [00:38<02:27,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 23, Train loss: 0.4507, Valid loss: 0.4396. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 12%|█████████████████▌                                                                                                                                | 24/200 [00:39<02:25,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 24, Train loss: 0.4396, Valid loss: 0.4290. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 12%|██████████████████▎                                                                                                                               | 25/200 [00:40<02:24,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 25, Train loss: 0.4289, Valid loss: 0.4190. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 13%|██████████████████▉                                                                                                                               | 26/200 [00:40<02:24,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 26, Train loss: 0.4188, Valid loss: 0.4096. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 14%|███████████████████▋                                                                                                                              | 27/200 [00:41<02:27,  1.18it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 27, Train loss: 0.4094, Valid loss: 0.4011. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 14%|████████████████████▍                                                                                                                             | 28/200 [00:42<02:24,  1.19it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 28, Train loss: 0.4008, Valid loss: 0.3933. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 14%|█████████████████████▏                                                                                                                            | 29/200 [00:43<02:26,  1.17it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 29, Train loss: 0.3929, Valid loss: 0.3864. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 15%|█████████████████████▉                                                                                                                            | 30/200 [00:44<02:24,  1.18it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 30, Train loss: 0.3859, Valid loss: 0.3805. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 16%|██████████████████████▋                                                                                                                           | 31/200 [00:45<02:19,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 31, Train loss: 0.3798, Valid loss: 0.3754. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 16%|███████████████████████▎                                                                                                                          | 32/200 [00:46<02:22,  1.18it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 32, Train loss: 0.3746, Valid loss: 0.3711. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 16%|████████████████████████                                                                                                                          | 33/200 [00:46<02:22,  1.17it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 33, Train loss: 0.3703, Valid loss: 0.3677. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 17%|████████████████████████▊                                                                                                                         | 34/200 [00:47<02:19,  1.19it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 34, Train loss: 0.3667, Valid loss: 0.3650. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 18%|█████████████████████████▌                                                                                                                        | 35/200 [00:48<02:18,  1.19it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 35, Train loss: 0.3639, Valid loss: 0.3630. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 18%|██████████████████████████▎                                                                                                                       | 36/200 [00:49<02:22,  1.15it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 36, Train loss: 0.3617, Valid loss: 0.3615. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 18%|███████████████████████████                                                                                                                       | 37/200 [00:50<02:21,  1.15it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 37, Train loss: 0.3601, Valid loss: 0.3605. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 19%|███████████████████████████▋                                                                                                                      | 38/200 [00:51<02:22,  1.14it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 38, Train loss: 0.3590, Valid loss: 0.3599. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 20%|████████████████████████████▍                                                                                                                     | 39/200 [00:52<02:22,  1.13it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 39, Train loss: 0.3583, Valid loss: 0.3596. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 20%|█████████████████████████████▏                                                                                                                    | 40/200 [00:52<02:16,  1.17it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 40, Train loss: 0.3579, Valid loss: 0.3596. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 20%|█████████████████████████████▉                                                                                                                    | 41/200 [00:53<02:15,  1.18it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 41, Train loss: 0.3578, Valid loss: 0.3597. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 21%|██████████████████████████████▋                                                                                                                   | 42/200 [00:54<02:11,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 42, Train loss: 0.3578, Valid loss: 0.3598. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 22%|███████████████████████████████▍                                                                                                                  | 43/200 [00:55<02:10,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 43, Train loss: 0.3579, Valid loss: 0.3599. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 22%|████████████████████████████████                                                                                                                  | 44/200 [00:56<02:10,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 44, Train loss: 0.3581, Valid loss: 0.3600. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 22%|████████████████████████████████▊                                                                                                                 | 45/200 [00:57<02:08,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 45, Train loss: 0.3582, Valid loss: 0.3600. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 23%|█████████████████████████████████▌                                                                                                                | 46/200 [00:57<02:06,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 46, Train loss: 0.3582, Valid loss: 0.3599. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 24%|██████████████████████████████████▎                                                                                                               | 47/200 [00:58<02:03,  1.23it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 47, Train loss: 0.3582, Valid loss: 0.3597. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 24%|███████████████████████████████████                                                                                                               | 48/200 [00:59<02:05,  1.22it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 48, Train loss: 0.3580, Valid loss: 0.3594. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 24%|███████████████████████████████████▊                                                                                                              | 49/200 [01:00<02:04,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 49, Train loss: 0.3579, Valid loss: 0.3591. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 25%|████████████████████████████████████▌                                                                                                             | 50/200 [01:01<02:05,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 50, Train loss: 0.3576, Valid loss: 0.3587. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 26%|█████████████████████████████████████▏                                                                                                            | 51/200 [01:01<02:03,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 51, Train loss: 0.3574, Valid loss: 0.3583. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 26%|█████████████████████████████████████▉                                                                                                            | 52/200 [01:02<02:05,  1.18it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 52, Train loss: 0.3571, Valid loss: 0.3579. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 26%|██████████████████████████████████████▋                                                                                                           | 53/200 [01:03<02:02,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 53, Train loss: 0.3568, Valid loss: 0.3576. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 27%|███████████████████████████████████████▍                                                                                                          | 54/200 [01:04<02:00,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 54, Train loss: 0.3566, Valid loss: 0.3573. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 28%|████████████████████████████████████████▏                                                                                                         | 55/200 [01:05<01:59,  1.22it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 55, Train loss: 0.3563, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 28%|████████████████████████████████████████▉                                                                                                         | 56/200 [01:06<01:57,  1.23it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 56, Train loss: 0.3562, Valid loss: 0.3568. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 28%|█████████████████████████████████████████▌                                                                                                        | 57/200 [01:06<01:56,  1.22it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 57, Train loss: 0.3560, Valid loss: 0.3567. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 29%|██████████████████████████████████████████▎                                                                                                       | 58/200 [01:07<01:56,  1.22it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 58, Train loss: 0.3559, Valid loss: 0.3566. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 30%|███████████████████████████████████████████                                                                                                       | 59/200 [01:08<01:55,  1.22it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 59, Train loss: 0.3559, Valid loss: 0.3565. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 30%|███████████████████████████████████████████▊                                                                                                      | 60/200 [01:09<02:00,  1.16it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 60, Train loss: 0.3559, Valid loss: 0.3565. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 30%|████████████████████████████████████████████▌                                                                                                     | 61/200 [01:10<01:58,  1.17it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 61, Train loss: 0.3559, Valid loss: 0.3566. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 31%|█████████████████████████████████████████████▎                                                                                                    | 62/200 [01:11<01:55,  1.19it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 62, Train loss: 0.3559, Valid loss: 0.3566. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 32%|█████████████████████████████████████████████▉                                                                                                    | 63/200 [01:11<01:52,  1.22it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 63, Train loss: 0.3560, Valid loss: 0.3567. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 32%|██████████████████████████████████████████████▋                                                                                                   | 64/200 [01:12<01:50,  1.23it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 64, Train loss: 0.3560, Valid loss: 0.3568. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 32%|███████████████████████████████████████████████▍                                                                                                  | 65/200 [01:13<01:48,  1.25it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 65, Train loss: 0.3561, Valid loss: 0.3569. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 33%|████████████████████████████████████████████████▏                                                                                                 | 66/200 [01:14<01:45,  1.27it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 66, Train loss: 0.3561, Valid loss: 0.3569. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 34%|████████████████████████████████████████████████▉                                                                                                 | 67/200 [01:14<01:42,  1.29it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 67, Train loss: 0.3561, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 34%|█████████████████████████████████████████████████▋                                                                                                | 68/200 [01:15<01:44,  1.26it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 68, Train loss: 0.3562, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 34%|██████████████████████████████████████████████████▎                                                                                               | 69/200 [01:16<01:45,  1.25it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 69, Train loss: 0.3562, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 35%|███████████████████████████████████████████████████                                                                                               | 70/200 [01:17<01:44,  1.25it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 70, Train loss: 0.3562, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 36%|███████████████████████████████████████████████████▊                                                                                              | 71/200 [01:18<01:43,  1.25it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 71, Train loss: 0.3562, Valid loss: 0.3572. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 36%|████████████████████████████████████████████████████▌                                                                                             | 72/200 [01:19<01:45,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 72, Train loss: 0.3562, Valid loss: 0.3572. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 36%|█████████████████████████████████████████████████████▎                                                                                            | 73/200 [01:19<01:45,  1.20it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 73, Train loss: 0.3562, Valid loss: 0.3572. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 37%|██████████████████████████████████████████████████████                                                                                            | 74/200 [01:20<01:44,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 74, Train loss: 0.3562, Valid loss: 0.3572. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 38%|██████████████████████████████████████████████████████▊                                                                                           | 75/200 [01:21<01:40,  1.24it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 75, Train loss: 0.3562, Valid loss: 0.3572. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 38%|███████████████████████████████████████████████████████▍                                                                                          | 76/200 [01:22<01:42,  1.21it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 76, Train loss: 0.3562, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 38%|████████████████████████████████████████████████████████▏                                                                                         | 77/200 [01:23<01:40,  1.22it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 77, Train loss: 0.3561, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 39%|████████████████████████████████████████████████████████▉                                                                                         | 78/200 [01:24<01:38,  1.24it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 78, Train loss: 0.3561, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 40%|█████████████████████████████████████████████████████████▋                                                                                        | 79/200 [01:24<01:36,  1.25it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 79, Train loss: 0.3561, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 40%|██████████████████████████████████████████████████████████▍                                                                                       | 80/200 [01:25<01:36,  1.25it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 80, Train loss: 0.3561, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 40%|███████████████████████████████████████████████████████████▏                                                                                      | 81/200 [01:26<01:35,  1.25it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 81, Train loss: 0.3561, Valid loss: 0.3571. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 41%|███████████████████████████████████████████████████████████▊                                                                                      | 82/200 [01:27<01:34,  1.24it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 82, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 42%|████████████████████████████████████████████████████████████▌                                                                                     | 83/200 [01:27<01:32,  1.26it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 83, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 42%|█████████████████████████████████████████████████████████████▎                                                                                    | 84/200 [01:28<01:30,  1.28it/s]18 Feb 15:46    INFO  [Train Info] Epoch: 84, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 42%|██████████████████████████████████████████████████████████████                                                                                    | 85/200 [01:29<01:29,  1.28it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 85, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 43%|██████████████████████████████████████████████████████████████▊                                                                                   | 86/200 [01:30<01:29,  1.28it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 86, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 44%|███████████████████████████████████████████████████████████████▌                                                                                  | 87/200 [01:31<01:27,  1.29it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 87, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 44%|████████████████████████████████████████████████████████████████▏                                                                                 | 88/200 [01:31<01:25,  1.31it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 88, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 44%|████████████████████████████████████████████████████████████████▉                                                                                 | 89/200 [01:32<01:27,  1.27it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 89, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 45%|█████████████████████████████████████████████████████████████████▋                                                                                | 90/200 [01:33<01:27,  1.25it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 90, Train loss: 0.3560, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 46%|██████████████████████████████████████████████████████████████████▍                                                                               | 91/200 [01:34<01:26,  1.26it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 91, Train loss: 0.3559, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 46%|███████████████████████████████████████████████████████████████████▏                                                                              | 92/200 [01:35<01:25,  1.26it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 92, Train loss: 0.3559, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 46%|███████████████████████████████████████████████████████████████████▉                                                                              | 93/200 [01:35<01:25,  1.25it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 93, Train loss: 0.3559, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 47%|████████████████████████████████████████████████████████████████████▌                                                                             | 94/200 [01:36<01:25,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 94, Train loss: 0.3559, Valid loss: 0.3570. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 48%|█████████████████████████████████████████████████████████████████████▎                                                                            | 95/200 [01:37<01:25,  1.23it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 95, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 48%|██████████████████████████████████████████████████████████████████████                                                                            | 96/200 [01:38<01:23,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 96, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 48%|██████████████████████████████████████████████████████████████████████▊                                                                           | 97/200 [01:39<01:21,  1.26it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 97, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 49%|███████████████████████████████████████████████████████████████████████▌                                                                          | 98/200 [01:39<01:22,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 98, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 50%|████████████████████████████████████████████████████████████████████████▎                                                                         | 99/200 [01:40<01:22,  1.22it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 99, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]       Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 50%|████████████████████████████████████████████████████████████████████████▌                                                                        | 100/200 [01:41<01:20,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 100, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 50%|█████████████████████████████████████████████████████████████████████████▏                                                                       | 101/200 [01:42<01:19,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 101, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 51%|█████████████████████████████████████████████████████████████████████████▉                                                                       | 102/200 [01:43<01:18,  1.25it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 102, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 52%|██████████████████████████████████████████████████████████████████████████▋                                                                      | 103/200 [01:43<01:16,  1.26it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 103, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 52%|███████████████████████████████████████████████████████████████████████████▍                                                                     | 104/200 [01:44<01:15,  1.27it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 104, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 52%|████████████████████████████████████████████████████████████████████████████▏                                                                    | 105/200 [01:45<01:14,  1.27it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 105, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 53%|████████████████████████████████████████████████████████████████████████████▊                                                                    | 106/200 [01:46<01:15,  1.25it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 106, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 54%|█████████████████████████████████████████████████████████████████████████████▌                                                                   | 107/200 [01:47<01:13,  1.27it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 107, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 54%|██████████████████████████████████████████████████████████████████████████████▎                                                                  | 108/200 [01:47<01:10,  1.30it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 108, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 55%|███████████████████████████████████████████████████████████████████████████████                                                                  | 109/200 [01:48<01:10,  1.29it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 109, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 55%|███████████████████████████████████████████████████████████████████████████████▊                                                                 | 110/200 [01:49<01:10,  1.28it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 110, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 56%|████████████████████████████████████████████████████████████████████████████████▍                                                                | 111/200 [01:50<01:09,  1.28it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 111, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 56%|█████████████████████████████████████████████████████████████████████████████████▏                                                               | 112/200 [01:51<01:11,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 112, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 56%|█████████████████████████████████████████████████████████████████████████████████▉                                                               | 113/200 [01:51<01:09,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 113, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 57%|██████████████████████████████████████████████████████████████████████████████████▋                                                              | 114/200 [01:52<01:07,  1.28it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 114, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 57%|███████████████████████████████████████████████████████████████████████████████████▍                                                             | 115/200 [01:53<01:05,  1.29it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 115, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 58%|████████████████████████████████████████████████████████████████████████████████████                                                             | 116/200 [01:54<01:06,  1.25it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 116, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 58%|████████████████████████████████████████████████████████████████████████████████████▊                                                            | 117/200 [01:55<01:09,  1.20it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 117, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 59%|█████████████████████████████████████████████████████████████████████████████████████▌                                                           | 118/200 [01:55<01:08,  1.19it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 118, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 60%|██████████████████████████████████████████████████████████████████████████████████████▎                                                          | 119/200 [01:56<01:06,  1.21it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 119, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 60%|███████████████████████████████████████████████████████████████████████████████████████                                                          | 120/200 [01:57<01:05,  1.22it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 120, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 60%|███████████████████████████████████████████████████████████████████████████████████████▋                                                         | 121/200 [01:58<01:09,  1.13it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 121, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 61%|████████████████████████████████████████████████████████████████████████████████████████▍                                                        | 122/200 [01:59<01:07,  1.15it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 122, Train loss: 0.3559, Valid loss: 0.3569. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 62%|█████████████████████████████████████████████████████████████████████████████████████████▏                                                       | 123/200 [02:00<01:04,  1.19it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 123, Train loss: 0.3559, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 62%|█████████████████████████████████████████████████████████████████████████████████████████▉                                                       | 124/200 [02:00<01:03,  1.19it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 124, Train loss: 0.3559, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 62%|██████████████████████████████████████████████████████████████████████████████████████████▋                                                      | 125/200 [02:01<01:03,  1.18it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 125, Train loss: 0.3559, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 63%|███████████████████████████████████████████████████████████████████████████████████████████▎                                                     | 126/200 [02:02<01:02,  1.19it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 126, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 64%|████████████████████████████████████████████████████████████████████████████████████████████                                                     | 127/200 [02:03<00:59,  1.23it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 127, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 64%|████████████████████████████████████████████████████████████████████████████████████████████▊                                                    | 128/200 [02:04<00:59,  1.21it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 128, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 64%|█████████████████████████████████████████████████████████████████████████████████████████████▌                                                   | 129/200 [02:05<00:57,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 129, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 65%|██████████████████████████████████████████████████████████████████████████████████████████████▎                                                  | 130/200 [02:05<00:54,  1.28it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 130, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 66%|██████████████████████████████████████████████████████████████████████████████████████████████▉                                                  | 131/200 [02:06<00:52,  1.30it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 131, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 66%|███████████████████████████████████████████████████████████████████████████████████████████████▋                                                 | 132/200 [02:07<00:51,  1.31it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 132, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 66%|████████████████████████████████████████████████████████████████████████████████████████████████▍                                                | 133/200 [02:08<00:51,  1.30it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 133, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████▏                                               | 134/200 [02:08<00:51,  1.29it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 134, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 68%|█████████████████████████████████████████████████████████████████████████████████████████████████▉                                               | 135/200 [02:09<00:49,  1.32it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 135, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 68%|██████████████████████████████████████████████████████████████████████████████████████████████████▌                                              | 136/200 [02:10<00:48,  1.32it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 136, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 68%|███████████████████████████████████████████████████████████████████████████████████████████████████▎                                             | 137/200 [02:11<00:48,  1.30it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 137, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 69%|████████████████████████████████████████████████████████████████████████████████████████████████████                                             | 138/200 [02:11<00:47,  1.30it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 138, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 70%|████████████████████████████████████████████████████████████████████████████████████████████████████▊                                            | 139/200 [02:12<00:46,  1.32it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 139, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 70%|█████████████████████████████████████████████████████████████████████████████████████████████████████▌                                           | 140/200 [02:13<00:44,  1.33it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 140, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 70%|██████████████████████████████████████████████████████████████████████████████████████████████████████▏                                          | 141/200 [02:14<00:45,  1.29it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 141, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 71%|██████████████████████████████████████████████████████████████████████████████████████████████████████▉                                          | 142/200 [02:15<00:46,  1.26it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 142, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 72%|███████████████████████████████████████████████████████████████████████████████████████████████████████▋                                         | 143/200 [02:15<00:46,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 143, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 72%|████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                        | 144/200 [02:16<00:45,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 144, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 72%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                       | 145/200 [02:17<00:45,  1.21it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 145, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 73%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                       | 146/200 [02:18<00:44,  1.22it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 146, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 74%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                      | 147/200 [02:19<00:42,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 147, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 74%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                     | 148/200 [02:19<00:42,  1.21it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 148, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 74%|████████████████████████████████████████████████████████████████████████████████████████████████████████████                                     | 149/200 [02:20<00:42,  1.20it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 149, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                    | 150/200 [02:21<00:42,  1.19it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 150, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 76%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                   | 151/200 [02:22<00:40,  1.22it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 151, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 76%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                  | 152/200 [02:23<00:38,  1.23it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 152, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 76%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                  | 153/200 [02:24<00:40,  1.17it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 153, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 77%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                 | 154/200 [02:25<00:38,  1.18it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 154, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 78%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                | 155/200 [02:25<00:37,  1.21it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 155, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 78%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                | 156/200 [02:26<00:35,  1.23it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 156, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 78%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                               | 157/200 [02:27<00:34,  1.23it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 157, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 79%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                              | 158/200 [02:28<00:33,  1.24it/s]18 Feb 15:47    INFO  [Train Info] Epoch: 158, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+ 80%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                             | 159/200 [02:28<00:31,  1.28it/s]18 Feb 15:48    INFO  [Train Info] Epoch: 159, Train loss: 0.3558, Valid loss: 0.3568. [Evaluation metric]      Mode:train, Macro_f1: 0.0508; Micro_f1: 0.4119;         Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+18 Feb 15:48    INFO  [Train Info] Early Stop!  Epoch:159
+ 80%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                             | 159/200 [02:30<00:38,  1.06it/s]
+18 Feb 15:48    INFO  [Train Info] [Test Info][Evaluation metric]       Mode:valid, Macro_f1: 0.0520; Micro_f1: 0.4214;         Mode:test, Macro_f1: 0.0504; Micro_f1: 0.4044;
+
+RHGNN
+18 Feb 15:48    INFO  [Config Info]     Model: RHGNN,   Task: node_classification,      Dataset: ohgbn-yelp2
+Done saving data into cached files.
+18 Feb 15:48    INFO  [Dataset Process] Split train into train/valid with the ratio of 8:2
+18 Feb 15:48    INFO  [NC Specific] Modify the out_dim with num_classes
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    OpenHGNN(args=config)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/start.py", line 18, in OpenHGNN
+    flow = build_flow(args, trainerflow)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/__init__.py", line 46, in build_flow
+    return FLOW_REGISTRY[flow_name](args)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/trainerflow/node_classification.py", line 42, in __init__
+    self.model = build_model(self.model_name).build_model_from_args(self.args, self.hg).to(self.device)
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/RHGNN.py", line 18, in build_model_from_args
+    input_dim_dict = {ntype: hg.nodes[ntype].data['h'].shape[1] for ntype in hg.ntypes}
+  File "/home/hanhui/OpenHGNN-main/openhgnn/models/RHGNN.py", line 18, in <dictcomp>
+    input_dim_dict = {ntype: hg.nodes[ntype].data['h'].shape[1] for ntype in hg.ntypes}
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/view.py", line 67, in __getitem__
+    return self._graph._get_n_repr(self._ntid, self._nodes)[key]
+  File "/home/hanhui/miniconda3/envs/openhgnn/lib/python3.7/site-packages/dgl/frame.py", line 445, in __getitem__
+    return self._columns[name].data
+KeyError: 'h'
